@@ -1,6 +1,6 @@
 package com.yibao.dao.repository.relation;
 
-import com.yibao.dao.eneity.relation.DrugRelation;
+import com.yibao.dao.entity.relation.DrugRelation;
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.repository.query.Param;

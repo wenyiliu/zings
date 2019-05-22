@@ -1,7 +1,7 @@
 package com.yibao.dao.mapper.base;
 
-import com.yibao.dao.eneity.DataCenterResultDO;
-import com.yibao.dao.eneity.param.DataCenterResultConditionBuilder;
+import com.yibao.dao.entity.DataCenterResultDO;
+import com.yibao.dao.entity.param.DataCenterResultConditionBuilder;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
 package com.yibao.biz.service;
 
 
-import com.yibao.dao.eneity.node.Department;
+import com.yibao.dao.entity.node.Department;
 
 import java.util.List;
 

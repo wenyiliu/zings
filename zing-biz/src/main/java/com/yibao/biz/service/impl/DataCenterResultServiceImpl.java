@@ -1,7 +1,7 @@
 package com.yibao.biz.service.impl;
 
 import com.yibao.biz.service.DataCenterResultService;
-import com.yibao.dao.eneity.DataCenterResultDO;
+import com.yibao.dao.entity.DataCenterResultDO;
 import com.yibao.dao.mapper.base.DataCenterResultBaseMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

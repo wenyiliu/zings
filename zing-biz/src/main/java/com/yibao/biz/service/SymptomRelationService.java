@@ -22,4 +22,11 @@ public interface SymptomRelationService {
      * @return
      */
     Result getSymptomByDisName(String name);
+
+    /**
+     * 根据症状名称获取疾病以及治疗方式
+     * @param name
+     * @return
+     */
+    Result getDiseaseAndCureWayBySymName(String name);
 }

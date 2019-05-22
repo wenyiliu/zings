@@ -1,4 +1,4 @@
-package com.yibao.dao.eneity.node;
+package com.yibao.dao.entity.node;
 
 import lombok.Data;
 import org.neo4j.ogm.annotation.GeneratedValue;
@@ -7,11 +7,11 @@ import org.neo4j.ogm.annotation.NodeEntity;
 
 /**
  * @auther: liuwenyi
- * @date 2019/5/10 16:27
+ * @date 2019/5/10 14:07
  */
 @Data
-@NodeEntity(label = "Check")
-public class Check {
+@NodeEntity(label = "Drug")
+public class Drug {
 
     @Id
     @GeneratedValue
@@ -19,6 +19,7 @@ public class Check {
 
     private String name;
 
-    public Check() {
+    public Drug() {
+
     }
 }

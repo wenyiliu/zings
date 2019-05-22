@@ -1,15 +1,14 @@
 package com.yibao.biz.service.impl;
 
 import com.google.common.collect.Lists;
-import com.yibao.biz.model.result.DiseaseBO;
-import com.yibao.biz.model.result.DiseaseSymptomBO;
-import com.yibao.biz.model.result.SymptomDiseaseBO;
+import com.yibao.biz.model.result.*;
 import com.yibao.biz.service.DiseaseService;
 import com.yibao.biz.service.SymptomRelationService;
 import com.yibao.common.entity.Result;
 import com.yibao.common.error.ZingErrors;
-import com.yibao.dao.eneity.node.Symptom;
-import com.yibao.dao.eneity.relation.SymptomRelation;
+import com.yibao.dao.entity.Disease;
+import com.yibao.dao.entity.node.Symptom;
+import com.yibao.dao.entity.relation.SymptomRelation;
 import com.yibao.dao.repository.relation.SymptomRelationRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,5 +68,26 @@ public class SymptomRelationServiceImpl implements SymptomRelationService {
         });
         diseaseSymptom.setSymptomList(symptomList.stream().distinct().collect(Collectors.toList()));
         return Result.wrapSuccessfulResult(diseaseSymptom);
+    }
+
+    @Override
+    public Result getDiseaseAndCureWayBySymName(String name) {
+        SymptomDiseaseCureWayBO symptomDiseaseCureWay = new SymptomDiseaseCureWayBO();
+        symptomDiseaseCureWay.setSymName(name);
+        List<SymptomRelation> symptomRelationList = symptomRelationRepository.getDiseaseBySymptomName(name);
+        if (symptomRelationList.isEmpty()) {
+            log.error("获取症状：{}相关的疾病以及治疗方式接口错误", name);
+            return Result.wrapErrorResult(ZingErrors.SYMPTOM_AND_DISEASE_AND_CUREWAY_IS_NOT_EXIST);
+        }
+        List<DiseaseCureWayBO> diseaseCureWayList = Lists.newArrayList();
+        symptomRelationList.forEach(symptomRelation -> {
+            DiseaseCureWayBO diseaseCureWay = new DiseaseCureWayBO();
+            Disease disease = symptomRelation.getDisease();
+            diseaseCureWay.setDisName(disease.getName());
+            diseaseCureWay.setCureWayList(disease.getCure_way());
+            diseaseCureWayList.add(diseaseCureWay);
+        });
+        symptomDiseaseCureWay.setDiseaseCureWayList(diseaseCureWayList);
+        return Result.wrapSuccessfulResult(symptomDiseaseCureWay);
     }
 }

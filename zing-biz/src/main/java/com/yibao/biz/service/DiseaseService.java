@@ -2,7 +2,7 @@ package com.yibao.biz.service;
 
 import com.yibao.biz.model.result.DiseaseBO;
 import com.yibao.common.entity.Result;
-import com.yibao.dao.eneity.Disease;
+import com.yibao.dao.entity.Disease;
 
 import java.util.List;
 

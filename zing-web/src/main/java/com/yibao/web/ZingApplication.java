@@ -12,7 +12,7 @@ import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
  */
 @SpringBootApplication(scanBasePackages ="com.yibao")
 @MapperScan("com.yibao.dao.mapper")
-@EntityScan("com.yibao.dao.eneity")
+@EntityScan("com.yibao.dao.entity")
 @EnableNeo4jRepositories("com.yibao.dao.repository")
 public class ZingApplication {
 

@@ -1,4 +1,4 @@
-package com.yibao.dao.eneity;
+package com.yibao.dao.entity;
 
 import lombok.Data;
 import org.neo4j.ogm.annotation.GeneratedValue;

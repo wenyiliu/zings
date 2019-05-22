@@ -2,7 +2,7 @@ package com.yibao.web.controller;
 
 import com.yibao.biz.service.DiseaseService;
 import com.yibao.common.entity.Result;
-import com.yibao.dao.eneity.Disease;
+import com.yibao.dao.entity.Disease;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package com.yibao.test;
 
 import com.yibao.biz.service.DataCenterResultService;
-import com.yibao.dao.eneity.DataCenterResultDO;
+import com.yibao.dao.entity.DataCenterResultDO;
 import com.yibao.web.ZingApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;

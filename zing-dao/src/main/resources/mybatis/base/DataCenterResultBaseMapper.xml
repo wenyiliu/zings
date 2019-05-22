@@ -4,7 +4,7 @@
 <mapper namespace="com.yibao.dao.mapper.base.DataCenterResultBaseMapper">
 
     <!--实体映射-->
-    <resultMap id="BaseResultMap" type="com.yibao.dao.eneity.DataCenterResultDO">
+    <resultMap id="BaseResultMap" type="com.yibao.dao.entity.DataCenterResultDO">
         <!--自增ID-->
         <result column="id" property="id"/>
         <!--是否删除（0:未删除 1:已删除）-->
@@ -79,7 +79,7 @@
         </where>
     </sql>
 
-    <insert id="insertSelective" parameterType="com.yibao.dao.eneity.DataCenterResultDO" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insertSelective" parameterType="com.yibao.dao.entity.DataCenterResultDO" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO `yb_data_center_result`
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">
@@ -142,7 +142,7 @@
         </trim>
     </insert>
 
-    <insert id="batchInsert" parameterType="com.yibao.dao.eneity.DataCenterResultDO">
+    <insert id="batchInsert" parameterType="com.yibao.dao.entity.DataCenterResultDO">
         INSERT INTO `yb_data_center_result`
         (<include refid="BaseColumn"/>)
         VALUES
@@ -161,7 +161,7 @@
         </foreach>
     </insert>
 
-    <update id="updateById" parameterType="com.yibao.dao.eneity.DataCenterResultDO">
+    <update id="updateById" parameterType="com.yibao.dao.entity.DataCenterResultDO">
         UPDATE `yb_data_center_result`
         <set>
             <if test="isDeleted != null">
@@ -192,7 +192,7 @@
         WHERE `id` = #{id}
     </update>
 
-    <update id="batchUpdateById" parameterType="com.yibao.dao.eneity.DataCenterResultDO">
+    <update id="batchUpdateById" parameterType="com.yibao.dao.entity.DataCenterResultDO">
         UPDATE `yb_data_center_result`
         <trim prefix="set" suffixOverrides=",">
             <trim prefix="is_deleted = case id" suffix="end,">
@@ -244,7 +244,7 @@
         </foreach>
     </update>
 
-    <select id="selectByCondition" resultMap="BaseResultMap" parameterType="com.yibao.dao.eneity.param.DataCenterResultConditionBuilder">
+    <select id="selectByCondition" resultMap="BaseResultMap" parameterType="com.yibao.dao.entity.param.DataCenterResultConditionBuilder">
         SELECT
         <include refid="BaseColumn"/>
         FROM `yb_data_center_result`

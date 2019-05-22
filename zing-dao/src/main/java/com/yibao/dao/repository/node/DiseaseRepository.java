@@ -1,6 +1,6 @@
 package com.yibao.dao.repository.node;
 
-import com.yibao.dao.eneity.Disease;
+import com.yibao.dao.entity.Disease;
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.repository.query.Param;

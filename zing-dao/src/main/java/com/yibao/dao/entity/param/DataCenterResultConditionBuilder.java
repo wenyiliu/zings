@@ -1,24 +1,25 @@
-package com.yibao.dao.eneity;
+package com.yibao.dao.entity.param;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 /**
  * @author liuwenyi
  * @date 2019/5/21
  */
-@Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class DataCenterResultDO {
+public class DataCenterResultConditionBuilder {
 
     /**
      * 自增ID
      */
     private Integer id;
+
+    /**
+     * id的List条件
+     */
+    private List<Integer> idList;
 
     /**
      * 是否删除（0:未删除 1:已删除）
@@ -36,19 +37,14 @@ public class DataCenterResultDO {
     private java.time.LocalDateTime modifyTime;
 
     /**
-     * 创建人,0表示无创建人值
-     */
-    private Integer creator;
-
-    /**
-     * 修改人,如果为0则表示纪录未修改
-     */
-    private Integer modifier;
-
-    /**
      * 数据中心统计查询SQL表`yb_data_center_sql`主键
      */
     private Integer sqlId;
+
+    /**
+     * sqlId的List条件
+     */
+    private List<Integer> sqlIdList;
 
     /**
      * 统计日期

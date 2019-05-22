@@ -1,7 +1,7 @@
 package com.yibao.dao.repository.relation;
 
-import com.yibao.dao.eneity.node.Symptom;
-import com.yibao.dao.eneity.relation.SymptomRelation;
+import com.yibao.dao.entity.node.Symptom;
+import com.yibao.dao.entity.relation.SymptomRelation;
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.repository.query.Param;

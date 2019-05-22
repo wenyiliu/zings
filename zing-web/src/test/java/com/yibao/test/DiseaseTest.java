@@ -1,7 +1,7 @@
 package com.yibao.test;
 
 import com.yibao.biz.service.DiseaseService;
-import com.yibao.dao.eneity.Disease;
+import com.yibao.dao.entity.Disease;
 import com.yibao.dao.repository.node.DiseaseRepository;
 import com.yibao.web.ZingApplication;
 import org.junit.Test;

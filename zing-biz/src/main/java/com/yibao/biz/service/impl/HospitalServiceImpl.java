@@ -6,7 +6,7 @@ import com.yibao.biz.service.HospitalService;
 import com.yibao.common.entity.Result;
 import com.yibao.common.error.ZingErrors;
 import com.yibao.common.util.BeanUtils;
-import com.yibao.dao.eneity.node.Hospital;
+import com.yibao.dao.entity.node.Hospital;
 import com.yibao.dao.repository.node.HospitalRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

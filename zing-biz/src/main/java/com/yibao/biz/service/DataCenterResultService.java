@@ -1,7 +1,7 @@
 package com.yibao.biz.service;
 
 
-import com.yibao.dao.eneity.DataCenterResultDO;
+import com.yibao.dao.entity.DataCenterResultDO;
 
 /**
  * @auther: liuwenyi

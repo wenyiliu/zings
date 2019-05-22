@@ -1,7 +1,7 @@
-package com.yibao.dao.eneity.relation;
+package com.yibao.dao.entity.relation;
 
-import com.yibao.dao.eneity.Disease;
-import com.yibao.dao.eneity.node.Drug;
+import com.yibao.dao.entity.Disease;
+import com.yibao.dao.entity.node.Drug;
 import lombok.Data;
 import org.neo4j.ogm.annotation.*;
 

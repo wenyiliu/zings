@@ -63,6 +63,8 @@ public class QuestionServiceImpl implements QuestionService {
                 return diseaseService.getDepartmentByDisName(value);
             case 11:
                 return symptomRelationService.getDiseaseBySymName(value);
+            case 12:
+                return symptomRelationService.getDiseaseAndCureWayBySymName(value);
             default:
                 return Result.wrapSuccessfulResult(null);
         }

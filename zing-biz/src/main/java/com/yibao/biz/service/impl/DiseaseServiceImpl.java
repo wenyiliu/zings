@@ -5,7 +5,7 @@ import com.yibao.biz.model.result.*;
 import com.yibao.biz.service.DiseaseService;
 import com.yibao.common.entity.Result;
 import com.yibao.common.error.ZingErrors;
-import com.yibao.dao.eneity.Disease;
+import com.yibao.dao.entity.Disease;
 import com.yibao.dao.repository.node.DiseaseRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package com.yibao.biz.service.impl;
 
 import com.yibao.biz.service.DepartmentService;
-import com.yibao.dao.eneity.node.Department;
+import com.yibao.dao.entity.node.Department;
 import com.yibao.dao.repository.node.DepartmentRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
