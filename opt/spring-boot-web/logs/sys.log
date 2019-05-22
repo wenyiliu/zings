@@ -256,3 +256,6 @@
 2019-05-22 19:25:41,073 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on LAPTOP-MFJJQEG3 with PID 4700 (D:\projectdata\JavaProjectData\demo\zing\zing-web\target\classes started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing)
 2019-05-22 19:25:41,083 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
 2019-05-22 19:25:45,953 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 5.626 seconds (JVM running for 6.704)
+2019-05-22 19:30:15,831 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on LAPTOP-MFJJQEG3 with PID 16504 (D:\projectdata\JavaProjectData\demo\zing\zing-web\target\classes started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing)
+2019-05-22 19:30:15,861 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-22 19:30:20,542 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 5.305 seconds (JVM running for 6.306)

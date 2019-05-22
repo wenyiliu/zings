@@ -41,14 +41,4 @@ public enum QuestionsEnum {
         this.question = question;
         this.filePath = filePath;
     }
-
-    public static String getQuestionPattern(Double index) {
-        for (QuestionsEnum question : QuestionsEnum.values()) {
-            if (index.equals(question.index)) {
-                return question.question;
-            }
-        }
-        return null;
-    }
-
 }
