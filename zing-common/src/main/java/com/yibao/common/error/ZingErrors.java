@@ -22,7 +22,9 @@ public enum ZingErrors implements ServiceErrors {
     SYNDROME_IS_NOT_EXIST(30012, "查询疾病相关并发症不存在"),
     DEPARTMENT_IS_NOT_EXIST(30013, "查询疾病所属科室不存在"),
     BAYES_MODEL_TRAIN_ERROR(30014, "naive bayes分类模型训练失败"),
-    HOSPITAL_IS_NOT_EXIST(30014, "查询的医院不存在或输入错误"),;
+    HOSPITAL_IS_NOT_EXIST(30014, "查询的医院不存在或输入错误"),
+    SYMPTOM_AND_DISEASE_AND_CUREWAY_IS_NOT_EXIST(30014, "查询与症状相关的疾病以及治疗方式不存在"),
+    ;
 
 
     @Getter

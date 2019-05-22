@@ -18,7 +18,7 @@ public class ParticipleTest {
 
     @Test
     public void test(){
-        Answer answer = Participle.analyQuery("鼾症做什么检查");
+        Answer answer = Participle.analyQuery("打鼾的治疗方式");
         System.out.println(answer);
     }
 }

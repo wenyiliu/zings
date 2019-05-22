@@ -28,7 +28,7 @@ public class BayesClassifier {
 
     private static NaiveBayesModel model;
 
-    private static final String FILEPATH = "D:\\projectdata\\JavaProjectData\\demo\\zing\\data\\question\\";
+    private static final String FILEPATH = "..\\data\\question\\";
 
     static {
         try {
