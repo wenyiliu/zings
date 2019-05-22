@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yibao.dao.mapper.base.DataCenterResultBaseMapper">
+
+    <!--实体映射-->
+    <resultMap id="BaseResultMap" type="com.yibao.dao.eneity.DataCenterResultDO">
+        <!--自增ID-->
+        <result column="id" property="id"/>
+        <!--是否删除（0:未删除 1:已删除）-->
+        <result column="is_deleted" property="isDeleted"/>
+        <!--记录创建时间-->
+        <result column="create_time" property="createTime"/>
+        <!--记录修改时间-->
+        <result column="modify_time" property="modifyTime"/>
+        <!--创建人,0表示无创建人值-->
+        <result column="creator" property="creator"/>
+        <!--修改人,如果为0则表示纪录未修改-->
+        <result column="modifier" property="modifier"/>
+        <!--数据中心统计查询SQL表`yb_data_center_sql`主键-->
+        <result column="sql_id" property="sqlId"/>
+        <!--统计日期-->
+        <result column="statistical_date" property="statisticalDate"/>
+        <!--以json形式存储数据统计结果-->
+        <result column="statistical_result" property="statisticalResult"/>
+    </resultMap>
+
+    <!-- 通用查询结果列-->
+    <sql id="BaseColumn">
+        <trim suffixOverrides=",">
+            `id`,
+            `is_deleted`,
+            `create_time`,
+            `modify_time`,
+            `creator`,
+            `modifier`,
+            `sql_id`,
+            `statistical_date`,
+            `statistical_result`,
+        </trim>
+    </sql>
+
+    <!-- 动态条件 -->
+    <sql id="QueryCondition">
+        <where>
+            <if test="id != null">
+                AND `id` = #{id}
+            </if>
+            <if test="idList != null">
+                AND `id` IN
+                <foreach collection="idList" close=")" open="(" separator="," item="item">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="isDeleted != null">
+                AND `is_deleted` = #{isDeleted}
+            </if>
+            <if test="createTime != null">
+                AND `create_time` = #{createTime}
+            </if>
+            <if test="modifyTime != null">
+                AND `modify_time` = #{modifyTime}
+            </if>
+            <if test="sqlId != null">
+                AND `sql_id` = #{sqlId}
+            </if>
+            <if test="sqlIdList != null">
+                AND `sql_id` IN
+                <foreach collection="sqlIdList" close=")" open="(" separator="," item="item">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="statisticalDate != null">
+                AND `statistical_date` = #{statisticalDate}
+            </if>
+            <if test="statisticalResult != null">
+                AND `statistical_result` = #{statisticalResult}
+            </if>
+        </where>
+    </sql>
+
+    <insert id="insertSelective" parameterType="com.yibao.dao.eneity.DataCenterResultDO" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `yb_data_center_result`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                `id`,
+            </if>
+            <if test="isDeleted != null">
+                `is_deleted`,
+            </if>
+            <if test="createTime != null">
+                `create_time`,
+            </if>
+            <if test="modifyTime != null">
+                `modify_time`,
+            </if>
+            <if test="creator != null">
+                `creator`,
+            </if>
+            <if test="modifier != null">
+                `modifier`,
+            </if>
+            <if test="sqlId != null">
+                `sql_id`,
+            </if>
+            <if test="statisticalDate != null">
+                `statistical_date`,
+            </if>
+            <if test="statisticalResult != null">
+                `statistical_result`,
+            </if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id},
+            </if>
+            <if test="isDeleted != null">
+                #{isDeleted},
+            </if>
+            <if test="createTime != null">
+                #{createTime},
+            </if>
+            <if test="modifyTime != null">
+                #{modifyTime},
+            </if>
+            <if test="creator != null">
+                #{creator},
+            </if>
+            <if test="modifier != null">
+                #{modifier},
+            </if>
+            <if test="sqlId != null">
+                #{sqlId},
+            </if>
+            <if test="statisticalDate != null">
+                #{statisticalDate},
+            </if>
+            <if test="statisticalResult != null">
+                #{statisticalResult},
+            </if>
+        </trim>
+    </insert>
+
+    <insert id="batchInsert" parameterType="com.yibao.dao.eneity.DataCenterResultDO">
+        INSERT INTO `yb_data_center_result`
+        (<include refid="BaseColumn"/>)
+        VALUES
+        <foreach collection="recordList" item="item" separator=",">
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+                #{item.id},
+                #{item.isDeleted},
+                #{item.createTime},
+                #{item.modifyTime},
+                #{item.creator},
+                #{item.modifier},
+                #{item.sqlId},
+                #{item.statisticalDate},
+                #{item.statisticalResult},
+            </trim>
+        </foreach>
+    </insert>
+
+    <update id="updateById" parameterType="com.yibao.dao.eneity.DataCenterResultDO">
+        UPDATE `yb_data_center_result`
+        <set>
+            <if test="isDeleted != null">
+                `is_deleted` = #{isDeleted},
+            </if>
+            <if test="createTime != null">
+                `create_time` = #{createTime},
+            </if>
+            <if test="modifyTime != null">
+                `modify_time` = #{modifyTime},
+            </if>
+            <if test="creator != null">
+                `creator` = #{creator},
+            </if>
+            <if test="modifier != null">
+                `modifier` = #{modifier},
+            </if>
+            <if test="sqlId != null">
+                `sql_id` = #{sqlId},
+            </if>
+            <if test="statisticalDate != null">
+                `statistical_date` = #{statisticalDate},
+            </if>
+            <if test="statisticalResult != null">
+                `statistical_result` = #{statisticalResult},
+            </if>
+        </set>
+        WHERE `id` = #{id}
+    </update>
+
+    <update id="batchUpdateById" parameterType="com.yibao.dao.eneity.DataCenterResultDO">
+        UPDATE `yb_data_center_result`
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="is_deleted = case id" suffix="end,">
+                <foreach collection="recordList" item="item" index="index">
+                    <if test="item.isDeleted != null">
+                        WHEN #{item.id} THEN #{item.isDeleted}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="modify_time = case id" suffix="end,">
+                <foreach collection="recordList" item="item" index="index">
+                    <if test="item.modifyTime != null">
+                        WHEN #{item.id} THEN #{item.modifyTime}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="modifier = case id" suffix="end,">
+                <foreach collection="recordList" item="item" index="index">
+                    <if test="item.modifier != null">
+                        WHEN #{item.id} THEN #{item.modifier}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="sql_id = case id" suffix="end,">
+                <foreach collection="recordList" item="item" index="index">
+                    <if test="item.sqlId != null">
+                        WHEN #{item.id} THEN #{item.sqlId}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="statistical_date = case id" suffix="end,">
+                <foreach collection="recordList" item="item" index="index">
+                    <if test="item.statisticalDate != null">
+                        WHEN #{item.id} THEN #{item.statisticalDate}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="statistical_result = case id" suffix="end,">
+                <foreach collection="recordList" item="item" index="index">
+                    <if test="item.statisticalResult != null">
+                        WHEN #{item.id} THEN #{item.statisticalResult}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        WHERE id IN
+        <foreach collection="recordList" item="item" index="index" open="(" close=")" separator=",">
+            #{item.id}
+        </foreach>
+    </update>
+
+    <select id="selectByCondition" resultMap="BaseResultMap" parameterType="com.yibao.dao.eneity.param.DataCenterResultConditionBuilder">
+        SELECT
+        <include refid="BaseColumn"/>
+        FROM `yb_data_center_result`
+        <include refid="QueryCondition"/>
+    </select>
+
+    <select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        SELECT
+        <include refid="BaseColumn"/>
+        FROM `yb_data_center_result`
+        WHERE `id` = #{id}
+    </select>
+</mapper>
