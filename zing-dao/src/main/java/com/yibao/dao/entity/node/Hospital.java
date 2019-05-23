@@ -28,6 +28,5 @@ public class Hospital {
     private String desc;
 
     public Hospital() {
-
     }
 }

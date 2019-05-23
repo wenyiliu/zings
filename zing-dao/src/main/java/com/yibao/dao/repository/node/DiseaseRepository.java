@@ -20,10 +20,6 @@ public interface DiseaseRepository extends Neo4jRepository<Disease, Long> {
     @Query("match(n:Disease)-[:并发症]->(m:Disease) where n.name={getSyn} return m")
     List<Disease> getSyndromeByDiseaseName(@Param("getSyn") String getSyn);
 
-    @Query("match(n:Disease) where n.name={getCause} return n.cause")
-    List<String> getCauseDiseaseName(@Param("getCause") String getCause);
-
-
     @Query("match(n:Disease)-[:常用药品|好评药品]->(m:Drug) where n.name={getDrug} return m.name")
     List<String> getDrugByDiseaseName(@Param("getDrug") String getDrug);
 

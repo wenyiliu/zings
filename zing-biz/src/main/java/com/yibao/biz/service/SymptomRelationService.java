@@ -29,4 +29,5 @@ public interface SymptomRelationService {
      * @return
      */
     Result getDiseaseAndCureWayBySymName(String name);
+
 }

@@ -17,4 +17,5 @@ public class DiseasePreventBO {
 
     @ApiModelProperty(value = "疾病防御措施")
     private String prevent;
+
 }

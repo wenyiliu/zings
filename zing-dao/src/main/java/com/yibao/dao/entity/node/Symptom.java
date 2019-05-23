@@ -20,6 +20,5 @@ public class Symptom {
     private String name;
 
     public Symptom() {
-
     }
 }

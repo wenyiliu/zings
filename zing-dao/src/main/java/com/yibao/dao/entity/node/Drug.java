@@ -20,6 +20,5 @@ public class Drug {
     private String name;
 
     public Drug() {
-
     }
 }

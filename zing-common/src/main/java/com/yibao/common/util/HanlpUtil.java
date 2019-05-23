@@ -8,6 +8,7 @@ import com.hankcs.hanlp.seg.Segment;
  * @date 2019/5/21 17:51
  */
 public class HanlpUtil {
+
     public static Segment segment;
 
     /**

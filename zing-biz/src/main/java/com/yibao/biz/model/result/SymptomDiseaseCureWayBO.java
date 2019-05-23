@@ -19,4 +19,5 @@ public class SymptomDiseaseCureWayBO {
 
     @ApiModelProperty(value = "症状所对应的疾病名称以及治疗方式")
     private List<DiseaseCureWayBO> diseaseCureWayList;
+
 }

@@ -9,6 +9,7 @@ import java.io.Serializable;
  * @date 2019/5/21 17:37
  */
 public class Result<D> implements Serializable {
+
     private D data;
 
     private boolean success;

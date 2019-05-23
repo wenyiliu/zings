@@ -18,4 +18,5 @@ public interface DepartmentService {
      * @return
      */
     int batchInsert(List<Department> departmentList);
+
 }

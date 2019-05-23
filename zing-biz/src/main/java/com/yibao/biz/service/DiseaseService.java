@@ -67,4 +67,5 @@ public interface DiseaseService {
      * @return
      */
     Result getDepartmentByDisName(String name);
+
 }

@@ -32,7 +32,7 @@ public class HospitalServiceImpl implements HospitalService {
     private static List<Hospital> getList() {
         String path = "data/hospital.txt";
         File file = new File(path);
-        BufferedReader reader = null;
+        BufferedReader reader;
         String line;
         List<Hospital> hospitalList = Lists.newArrayList();
         try {

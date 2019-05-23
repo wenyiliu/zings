@@ -11,7 +11,6 @@ public class LabeledPoint {
 
     private Double label;
 
-
     private double[] data;
 
     public LabeledPoint() {
@@ -22,5 +21,4 @@ public class LabeledPoint {
         this.label = label;
         this.data = data;
     }
-
 }

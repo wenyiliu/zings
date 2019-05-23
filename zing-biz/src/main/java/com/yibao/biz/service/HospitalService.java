@@ -17,4 +17,5 @@ public interface HospitalService {
     int batchInsert();
 
     Result getHospitalByNameOrAlias(String name);
+
 }

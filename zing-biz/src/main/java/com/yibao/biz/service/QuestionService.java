@@ -15,4 +15,5 @@ public interface QuestionService {
      * @return
      */
     Result answer(String question);
+
 }

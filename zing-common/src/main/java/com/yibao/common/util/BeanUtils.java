@@ -13,6 +13,7 @@ import java.util.concurrent.ConcurrentMap;
  * @date 2019/5/21 17:48
  */
 public class BeanUtils {
+
     private static final ConcurrentMap<String, BeanCopier> CACHE_COPIER_MAP = Maps.newConcurrentMap();
 
     /**

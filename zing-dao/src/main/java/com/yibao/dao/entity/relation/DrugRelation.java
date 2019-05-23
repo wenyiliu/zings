@@ -26,6 +26,5 @@ public class DrugRelation {
     private String relation;
 
     public DrugRelation() {
-
     }
 }

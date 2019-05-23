@@ -23,4 +23,5 @@ public interface CheckRelationService {
      * @return
      */
     Result getCheckAndDiseaseBySymName(String name);
+
 }

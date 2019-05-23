@@ -15,6 +15,7 @@ import java.util.List;
 @Data
 @NodeEntity
 public class Disease {
+
     @Id
     @GeneratedValue
     private Long id;
@@ -61,6 +62,5 @@ public class Disease {
 
 
     public Disease() {
-
     }
 }

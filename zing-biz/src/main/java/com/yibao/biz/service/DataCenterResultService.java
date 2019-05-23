@@ -10,4 +10,5 @@ import com.yibao.dao.entity.DataCenterResultDO;
 public interface DataCenterResultService {
 
     DataCenterResultDO getDataByID(Integer id);
+
 }
