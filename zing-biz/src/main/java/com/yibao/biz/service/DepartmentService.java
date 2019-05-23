@@ -19,4 +19,5 @@ public interface DepartmentService {
      */
     int batchInsert(List<Department> departmentList);
 
+    Boolean insertDepartment(Department department);
 }

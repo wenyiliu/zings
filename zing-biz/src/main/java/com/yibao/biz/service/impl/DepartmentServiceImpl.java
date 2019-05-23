@@ -25,4 +25,20 @@ public class DepartmentServiceImpl implements DepartmentService {
         List departments = (List) departmentRepository.saveAll(departmentList);
         return departments.size();
     }
+
+    @Override
+    public Boolean insertDepartment(Department department) {
+        String name=department.getName();
+        if (name==null||name.equals("")){
+            log.error("名字不存在",department.toString());
+            return false;
+        }
+        List<Department> departmentList = departmentRepository.getDepartmentByName(department.getName());
+        if (!departmentList.isEmpty()){
+            log.info("已经存在跳过创建",name);
+            return true;
+        }
+        departmentRepository.save(department);
+        return true;
+    }
 }
