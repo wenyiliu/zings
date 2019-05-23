@@ -29,14 +29,18 @@ public class Participle {
         for (Term term : termList) {
             String word = term.word;//从term中获取分词
             String pos = term.nature.toString();//从term中获取标签
-            if (pos.equals("ill")) { //ill 疾病
-                list.add(word);
-                sb.append("ill ");
-            } else if (pos.equals("sym")) { //sym症状
-                list.add(word);
-                sb.append("sym ");
-            } else {
-                sb.append(word).append(" ");
+            switch (pos) {
+                case "ill":  //ill 疾病
+                    list.add(word);
+                    sb.append("ill ");
+                    break;
+                case "sym":  //sym症状
+                    list.add(word);
+                    sb.append("sym ");
+                    break;
+                default:
+                    sb.append(word).append(" ");
+                    break;
             }
         }
         answer.setValues(list);
