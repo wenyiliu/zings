@@ -40,7 +40,7 @@ public class DepartmentRepositoryTest {
 
     @Test
     public void getDep(){
-        List<Department> departmentList = departmentRepository.getDepartmentByName("精神病科室");
+        List<Department> departmentList = departmentRepository.getDepartmentByName("消化内科");
         departmentList.forEach(department -> System.out.println(department.getName()));
     }
 

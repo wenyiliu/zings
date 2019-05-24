@@ -38,6 +38,7 @@ public class Participle {
                     list.add(word);
                     sb.append("sym ");
                     break;
+                    //todo 实体
                 default:
                     sb.append(word).append(" ");
                     break;
