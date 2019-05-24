@@ -64,7 +64,6 @@ public class BayesClassifier {
             }
             br.close();
         } catch (Exception e) {
-            e.printStackTrace();
             log.error("文件加载失败，原因：{}", e.getMessage());
         }
         return lineList;
