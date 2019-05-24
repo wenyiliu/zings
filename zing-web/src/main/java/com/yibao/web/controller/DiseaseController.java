@@ -3,7 +3,7 @@ package com.yibao.web.controller;
 import com.yibao.biz.service.DiseaseService;
 import com.yibao.common.entity.Result;
 import com.yibao.dao.entity.Disease;
-import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
@@ -17,7 +17,7 @@ import java.util.List;
  * @auther: liuwenyi
  * @date 2019/5/21 10:31
  */
-@ApiModel("疾病相关接口")
+@Api(tags = "疾病相关接口")
 @RestController
 @RequestMapping("disease")
 public class DiseaseController {

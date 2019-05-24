@@ -2,7 +2,7 @@ package com.yibao.web.controller;
 
 import com.yibao.biz.service.HospitalService;
 import com.yibao.common.entity.Result;
-import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @auther: liuwenyi
  * @date 2019/5/20 16:10
  */
-@ApiModel("医院相关接口")
+@Api(tags = "医院相关接口")
 @RestController
 @RequestMapping("hospital")
 public class HospitalController {

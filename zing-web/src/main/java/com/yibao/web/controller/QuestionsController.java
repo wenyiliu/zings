@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @auther: liuwenyi
  * @date 2019/5/7 16:04
  */
-@Api("问答接口")
+@Api(tags = "问答接口")
 @RequestMapping("question")
 @RestController
 public class QuestionsController {
