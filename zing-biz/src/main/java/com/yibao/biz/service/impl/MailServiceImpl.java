@@ -26,6 +26,7 @@ public class MailServiceImpl implements MailService {
 
     @Value("${spring.mail.username}")
     private String sender;
+
     @Override
     public Boolean sendSimpleMail(MailBO mail) {
         try {
