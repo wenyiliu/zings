@@ -1,0 +1,75 @@
+2019-05-29 10:46:11,049 INFO (StartupInfoLogger.java:50)- Starting GenreRepositoryTest on LAPTOP-MFJJQEG3 with PID 2364 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 10:46:11,105 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 10:46:25,543 INFO (StartupInfoLogger.java:59)- Started GenreRepositoryTest in 16.184 seconds (JVM running for 20.195)
+2019-05-29 10:47:29,071 INFO (StartupInfoLogger.java:50)- Starting GenreRepositoryTest on LAPTOP-MFJJQEG3 with PID 692 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 10:47:29,111 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 10:47:37,372 INFO (StartupInfoLogger.java:59)- Started GenreRepositoryTest in 9.28 seconds (JVM running for 11.2)
+2019-05-29 10:49:40,857 INFO (StartupInfoLogger.java:50)- Starting GenreRepositoryTest on LAPTOP-MFJJQEG3 with PID 14552 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 10:49:40,860 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 10:49:48,795 INFO (StartupInfoLogger.java:59)- Started GenreRepositoryTest in 8.7 seconds (JVM running for 10.373)
+2019-05-29 10:53:41,009 INFO (StartupInfoLogger.java:50)- Starting GenreRepositoryTest on LAPTOP-MFJJQEG3 with PID 14260 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 10:53:41,012 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 10:53:50,948 INFO (StartupInfoLogger.java:59)- Started GenreRepositoryTest in 11.041 seconds (JVM running for 13.288)
+2019-05-29 10:54:47,944 INFO (StartupInfoLogger.java:50)- Starting GenreRepositoryTest on LAPTOP-MFJJQEG3 with PID 18064 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 10:54:47,948 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 10:54:55,938 INFO (StartupInfoLogger.java:59)- Started GenreRepositoryTest in 9.141 seconds (JVM running for 11.235)
+2019-05-29 10:55:22,297 INFO (StartupInfoLogger.java:50)- Starting GenreRepositoryTest on LAPTOP-MFJJQEG3 with PID 8228 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 10:55:22,300 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 10:55:30,342 INFO (StartupInfoLogger.java:59)- Started GenreRepositoryTest in 9.059 seconds (JVM running for 11.1)
+2019-05-29 11:13:47,551 INFO (StartupInfoLogger.java:50)- Starting IllnessRepositoryTest on LAPTOP-MFJJQEG3 with PID 9132 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:13:47,557 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:13:57,089 INFO (StartupInfoLogger.java:59)- Started IllnessRepositoryTest in 10.39 seconds (JVM running for 12.122)
+2019-05-29 11:16:42,417 INFO (StartupInfoLogger.java:50)- Starting IllnessRepositoryTest on LAPTOP-MFJJQEG3 with PID 9584 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:16:42,421 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:16:50,168 INFO (StartupInfoLogger.java:59)- Started IllnessRepositoryTest in 8.706 seconds (JVM running for 10.536)
+2019-05-29 11:21:01,207 INFO (StartupInfoLogger.java:50)- Starting GenreTest on LAPTOP-MFJJQEG3 with PID 792 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:21:01,213 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:21:09,991 INFO (StartupInfoLogger.java:59)- Started GenreTest in 9.531 seconds (JVM running for 11.3)
+2019-05-29 11:21:34,181 INFO (StartupInfoLogger.java:50)- Starting GenreTest on LAPTOP-MFJJQEG3 with PID 7464 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:21:34,186 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:21:41,298 INFO (StartupInfoLogger.java:59)- Started GenreTest in 8.23 seconds (JVM running for 10.59)
+2019-05-29 11:23:49,332 INFO (StartupInfoLogger.java:50)- Starting GenreTest on LAPTOP-MFJJQEG3 with PID 10640 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:23:49,334 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:23:58,722 INFO (StartupInfoLogger.java:59)- Started GenreTest in 10.569 seconds (JVM running for 12.527)
+2019-05-29 11:25:04,532 INFO (StartupInfoLogger.java:50)- Starting GenreTest on LAPTOP-MFJJQEG3 with PID 6860 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:25:04,542 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:25:12,299 INFO (StartupInfoLogger.java:59)- Started GenreTest in 9.093 seconds (JVM running for 10.759)
+2019-05-29 11:40:47,969 INFO (StartupInfoLogger.java:50)- Starting ExamineTest on LAPTOP-MFJJQEG3 with PID 10824 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:40:47,974 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:40:56,963 INFO (StartupInfoLogger.java:59)- Started ExamineTest in 10.355 seconds (JVM running for 12.677)
+2019-05-29 11:43:51,394 INFO (StartupInfoLogger.java:50)- Starting ExamineTest on LAPTOP-MFJJQEG3 with PID 17064 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:43:51,424 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:44:00,338 INFO (StartupInfoLogger.java:59)- Started ExamineTest in 9.88 seconds (JVM running for 11.489)
+2019-05-29 11:44:55,755 INFO (StartupInfoLogger.java:50)- Starting ExamineTest on LAPTOP-MFJJQEG3 with PID 9956 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:44:55,766 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:45:04,050 INFO (StartupInfoLogger.java:59)- Started ExamineTest in 9.671 seconds (JVM running for 11.554)
+2019-05-29 11:51:51,512 INFO (StartupInfoLogger.java:50)- Starting GenreTest on LAPTOP-MFJJQEG3 with PID 7060 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:51:51,516 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:52:01,237 INFO (StartupInfoLogger.java:59)- Started GenreTest in 10.786 seconds (JVM running for 12.861)
+2019-05-29 11:53:35,849 INFO (StartupInfoLogger.java:50)- Starting GenreTest on LAPTOP-MFJJQEG3 with PID 12164 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:53:35,887 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:53:44,350 INFO (StartupInfoLogger.java:59)- Started GenreTest in 10.019 seconds (JVM running for 11.66)
+2019-05-29 11:54:26,833 INFO (StartupInfoLogger.java:50)- Starting GenreTest on LAPTOP-MFJJQEG3 with PID 7112 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:54:26,837 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:54:34,614 INFO (StartupInfoLogger.java:59)- Started GenreTest in 8.847 seconds (JVM running for 10.375)
+2019-05-29 11:55:01,988 INFO (StartupInfoLogger.java:50)- Starting ExamineTest on LAPTOP-MFJJQEG3 with PID 12144 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 11:55:02,030 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 11:55:10,638 INFO (StartupInfoLogger.java:59)- Started ExamineTest in 9.835 seconds (JVM running for 11.447)
+2019-05-29 14:19:19,222 INFO (StartupInfoLogger.java:50)- Starting CauseTest on LAPTOP-MFJJQEG3 with PID 17744 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 14:19:19,238 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 14:19:30,430 INFO (StartupInfoLogger.java:59)- Started CauseTest in 12.084 seconds (JVM running for 14.101)
+2019-05-29 14:21:47,078 INFO (StartupInfoLogger.java:50)- Starting CauseTest on LAPTOP-MFJJQEG3 with PID 14984 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 14:21:47,080 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 14:21:56,838 INFO (StartupInfoLogger.java:59)- Started CauseTest in 10.741 seconds (JVM running for 12.412)
+2019-05-29 14:22:57,204 INFO (StartupInfoLogger.java:50)- Starting CauseTest on LAPTOP-MFJJQEG3 with PID 11956 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 14:22:57,216 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 14:23:05,930 INFO (StartupInfoLogger.java:59)- Started CauseTest in 9.822 seconds (JVM running for 11.52)
+2019-05-29 14:39:12,233 INFO (StartupInfoLogger.java:50)- Starting EtiologyTest on LAPTOP-MFJJQEG3 with PID 12848 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 14:39:12,236 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 14:39:20,196 INFO (StartupInfoLogger.java:59)- Started EtiologyTest in 8.796 seconds (JVM running for 10.491)
+2019-05-29 14:41:33,139 INFO (StartupInfoLogger.java:50)- Starting EtiologyTest on LAPTOP-MFJJQEG3 with PID 4304 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 14:41:33,151 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 14:41:43,442 INFO (StartupInfoLogger.java:59)- Started EtiologyTest in 11.221 seconds (JVM running for 13.071)
+2019-05-29 14:42:16,904 INFO (StartupInfoLogger.java:50)- Starting EtiologyTest on LAPTOP-MFJJQEG3 with PID 9652 (started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing\zing-web)
+2019-05-29 14:42:16,909 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-29 14:42:27,519 INFO (StartupInfoLogger.java:59)- Started EtiologyTest in 12.051 seconds (JVM running for 13.865)
