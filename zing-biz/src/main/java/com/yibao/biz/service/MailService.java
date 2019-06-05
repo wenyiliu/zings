@@ -8,7 +8,10 @@ import com.yibao.biz.model.result.MailBO;
  */
 public interface MailService {
 
-    Boolean sendSimpleMail(MailBO mail);
-
-
+    /**
+     * 发送带有附件的邮件
+     * @param mail
+     * @return
+     */
+    Boolean sendExcelMail(MailBO mail);
 }

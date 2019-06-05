@@ -2,7 +2,7 @@ package com.yibao.dao.mapper.business;
 
 import com.yibao.dao.entity.DataCenterSqlDO;
 import com.yibao.dao.mapper.base.DataCenterSqlBaseMapper;
-import org.springframework.data.repository.query.Param;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

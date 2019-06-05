@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @auther: liuwenyi
@@ -22,4 +23,7 @@ public class MailBO implements Serializable{
 
     @ApiModelProperty(value = "邮件内容")
     private String content;
+
+    @ApiModelProperty(value = "附件路径")
+    private List<String> pathList;
 }
