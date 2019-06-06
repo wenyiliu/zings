@@ -20,8 +20,8 @@ public class NaiveBayesModel {
         NaiveBayesModel.categoryList = categoryList;
     }
 
-    public Double predict(double[] data) {
-        Map<Double, Double> rateMap = Maps.newHashMap();
+    public Integer predict(double[] data) {
+        Map<Integer, Double> rateMap = Maps.newHashMap();
         Integer predictLen = data.length;
         for (Category category : categoryList) {
             Double probability = category.getProbability();
@@ -41,7 +41,7 @@ public class NaiveBayesModel {
             result = result * probability;
             rateMap.put(category.getIndex(), result);
         }
-        List<Map.Entry<Double, Double>> list = Lists.newArrayList(rateMap.entrySet());
+        List<Map.Entry<Integer, Double>> list = Lists.newArrayList(rateMap.entrySet());
         list.sort((o1, o2) -> (o2.getValue()).compareTo(o1.getValue()));
         return list.get(0).getKey();
     }

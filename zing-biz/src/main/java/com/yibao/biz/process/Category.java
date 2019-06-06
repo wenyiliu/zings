@@ -15,8 +15,8 @@ import java.util.Map;
 @ApiModel("样本分类数据")
 public class Category {
 
-    @ApiModelProperty(value = "类别索引", example = "1.0")
-    private Double index;
+    @ApiModelProperty(value = "类别索引", example = "1")
+    private Integer index;
 
     @ApiModelProperty(value = "该类别在样本空间的概率", example = "0.314159262")
     private Double probability;

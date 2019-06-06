@@ -1,3 +1,7 @@
-2019-05-28 10:53:35,331 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on LAPTOP-MFJJQEG3 with PID 12308 (D:\projectdata\JavaProjectData\demo\zing\zing-web\target\classes started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing)
-2019-05-28 10:53:35,406 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2019-05-28 10:53:43,638 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 9.945 seconds (JVM running for 13.548)
+2019-06-06 15:43:30,238 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on LAPTOP-MFJJQEG3 with PID 17652 (D:\projectdata\JavaProjectData\demo\zing\zing-web\target\classes started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing)
+2019-06-06 15:43:30,253 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-06-06 15:43:37,664 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 8.546 seconds (JVM running for 10.7)
+2019-06-06 15:44:08,966 ERROR (SymptomRelationServiceImpl.java:39)- 获取和症状：打鼾相关疾病接口出错
+2019-06-06 15:44:43,179 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on LAPTOP-MFJJQEG3 with PID 18812 (D:\projectdata\JavaProjectData\demo\zing\zing-web\target\classes started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing)
+2019-06-06 15:44:43,184 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-06-06 15:44:48,727 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 6.36 seconds (JVM running for 7.454)

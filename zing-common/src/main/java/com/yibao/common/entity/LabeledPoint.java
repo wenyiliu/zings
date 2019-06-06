@@ -1,4 +1,4 @@
-package com.yibao.biz.process;
+package com.yibao.common.entity;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 public class LabeledPoint {
 
-    private Double label;
+    private Integer label;
 
     private double[] data;
 
@@ -17,7 +17,7 @@ public class LabeledPoint {
 
     }
 
-    public LabeledPoint(Double label, double[] data) {
+    public LabeledPoint(Integer label, double[] data) {
         this.label = label;
         this.data = data;
     }

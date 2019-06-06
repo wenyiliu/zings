@@ -2,6 +2,7 @@ package com.yibao.biz.process;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.yibao.common.entity.LabeledPoint;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;

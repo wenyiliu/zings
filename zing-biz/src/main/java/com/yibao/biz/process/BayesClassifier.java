@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.hankcs.hanlp.seg.common.Term;
 import com.yibao.biz.bizenun.QuestionsEnum;
+import com.yibao.common.entity.LabeledPoint;
 import com.yibao.common.util.HanlpUtil;
 import lombok.extern.slf4j.Slf4j;
 
