@@ -5,7 +5,7 @@ import com.yibao.common.error.ServiceErrors;
 import java.io.Serializable;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/21 17:37
  */
 public class Result<D> implements Serializable {

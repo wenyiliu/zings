@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/6/3 17:24
  */
 @Slf4j
@@ -92,24 +92,27 @@ public class ExcelUtil {
             }
         }
     }
-    //创建文本样式
+
+    /**
+     * 创建文本样式
+     * @param workbook
+     * @return
+     */
     private static XSSFCellStyle genContextStyle(XSSFWorkbook workbook) {
         XSSFCellStyle style = workbook.createCellStyle();
-        style.setAlignment(HorizontalAlignment.CENTER);//文本水平居中显示
-        style.setVerticalAlignment(VerticalAlignment.CENTER);//文本竖直居中显示
-        style.setWrapText(true);//文本自动换行
+        //文本水平居中显示
+        style.setAlignment(HorizontalAlignment.CENTER);
+        //文本竖直居中显示
+        style.setVerticalAlignment(VerticalAlignment.CENTER);
+        //文本自动换行
+        style.setWrapText(true);
 
         //生成Excel表单，需要给文本添加边框样式和颜色
-        style.setBorderBottom(BorderStyle.THIN);//设置文本边框
+        //设置文本边框
+        style.setBorderBottom(BorderStyle.THIN);
         style.setBorderLeft(BorderStyle.THIN);
         style.setBorderRight(BorderStyle.THIN);
         style.setBorderTop(BorderStyle.THIN);
-        //set border color
-//        style.setTopBorderColor(new XSSFColor(java.awt.Color.BLACK));//设置文本边框颜色
-//        style.setBottomBorderColor(new XSSFColor(java.awt.Color.BLACK));
-//        style.setLeftBorderColor(new XSSFColor(java.awt.Color.BLACK));
-//        style.setRightBorderColor(new XSSFColor(java.awt.Color.BLACK));
-
         return style;
     }
 }

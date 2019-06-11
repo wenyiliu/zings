@@ -7,7 +7,7 @@ import com.yibao.dao.entity.Disease;
 import java.util.List;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/4/30 18:05
  */
 public interface DiseaseService {
@@ -50,6 +50,11 @@ public interface DiseaseService {
      */
     List<Disease> getDiseaseByName(String name);
 
+    /**
+     * 获取医院信息
+     * @param disease
+     * @return
+     */
     DiseaseBO setDiseaseBO(Disease disease);
 
     /**

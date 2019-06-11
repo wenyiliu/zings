@@ -20,7 +20,7 @@ import java.io.FileReader;
 import java.util.List;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/29 11:30
  */
 @RunWith(SpringJUnit4ClassRunner.class)

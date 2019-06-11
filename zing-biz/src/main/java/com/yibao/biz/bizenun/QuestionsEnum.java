@@ -3,7 +3,7 @@ package com.yibao.biz.bizenun;
 import lombok.Getter;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/6 10:18
  */
 public enum QuestionsEnum {

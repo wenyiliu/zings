@@ -13,5 +13,9 @@ import java.util.Map;
 @Repository
 public interface HospitalMapper extends HospitalBaseMapper {
 
+    /**
+     * 获取医院科室信息
+     * @return
+     */
     List<Map<String,String>> getHospitalDepartment();
 }

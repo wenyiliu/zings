@@ -9,9 +9,10 @@ import org.apache.commons.math3.stat.descriptive.moment.StandardDeviation;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Stream;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/6/6 14:32
  */
 @Slf4j
@@ -88,9 +89,12 @@ public class ADC {
         return normalization;
     }
 
-    public static void euclideanDistance(List<LabeledPoint> list, double[] target) {
+    public static void euclideanDistance(List<LabeledPoint> list, LabeledPoint target) {
+        list.add(target);
+        List<Map<Integer,Double>> similarityList=Lists.newArrayList();
         List<LabeledPoint> labeledPointList = zScore(list);
-        double[] d = normalization(target);
+        Stream<LabeledPoint> labeledPointStream = labeledPointList.stream()
+                .filter(labeledPoint -> labeledPoint.getLabel().equals(target.getLabel()));
         labeledPointList.forEach(labeledPoint -> {
             labeledPoint.getData();
         });

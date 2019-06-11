@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/14 9:48
  */
 @Slf4j

@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/28 15:04
  */
 @Data

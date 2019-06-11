@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.util.List;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/23 14:44
  */
 @Slf4j

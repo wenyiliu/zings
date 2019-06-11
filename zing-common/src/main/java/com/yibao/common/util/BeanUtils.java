@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.concurrent.ConcurrentMap;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/21 17:48
  */
 public class BeanUtils {

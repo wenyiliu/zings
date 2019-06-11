@@ -3,7 +3,7 @@ package com.yibao.biz.service;
 import com.yibao.common.entity.Result;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/14 19:49
  */
 public interface HospitalService {
@@ -16,6 +16,11 @@ public interface HospitalService {
      */
     int batchInsert();
 
+    /**
+     * 根据别名获取名字获取医院信息
+     * @param name
+     * @return
+     */
     Result getHospitalByNameOrAlias(String name);
 
 }

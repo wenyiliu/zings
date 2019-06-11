@@ -4,7 +4,7 @@ package com.yibao.biz.service;
 import com.yibao.common.entity.Result;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/14 10:35
  */
 public interface CheckRelationService {

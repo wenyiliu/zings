@@ -3,7 +3,7 @@ package com.yibao.common.error;
 import lombok.Getter;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/5 14:13
  */
 public enum ZingErrors implements ServiceErrors {

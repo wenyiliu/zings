@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/20 16:10
  */
 @Api(tags = "医院相关接口")

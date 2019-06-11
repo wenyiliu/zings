@@ -6,7 +6,7 @@ import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/29 14:26
  * 心衰基本病因
  */

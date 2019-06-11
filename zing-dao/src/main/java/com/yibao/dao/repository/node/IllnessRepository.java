@@ -7,12 +7,17 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/29 11:11
  */
 @Repository
 public interface IllnessRepository extends Neo4jRepository<Illness,Long>{
 
+    /**
+     * 获取疾病
+     * @param name
+     * @return
+     */
     @Query("match(n:Illness) where n.name={name} or n.aliaso={name} or n.aliast={name} return n")
     Illness findIllnessByName(@Param("name") String name);
 }

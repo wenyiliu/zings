@@ -6,7 +6,7 @@ import com.yibao.dao.entity.node.Department;
 import java.util.List;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/14 18:13
  */
 public interface DepartmentService {
@@ -19,5 +19,10 @@ public interface DepartmentService {
      */
     int batchInsert(List<Department> departmentList);
 
+    /**
+     * 插入医院科室
+     * @param department
+     * @return
+     */
     Boolean insertDepartment(Department department);
 }

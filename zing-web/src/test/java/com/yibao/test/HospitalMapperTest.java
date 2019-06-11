@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/24 15:07
  */
 @RunWith(SpringJUnit4ClassRunner.class)

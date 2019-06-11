@@ -3,7 +3,7 @@ package com.yibao.common.entity;
 import lombok.Data;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/17 17:43
  */
 @Data

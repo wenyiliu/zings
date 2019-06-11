@@ -3,7 +3,7 @@ package com.yibao.common.error;
 import java.io.Serializable;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/4/30 14:56
  */
 public interface ServiceErrors extends Serializable {

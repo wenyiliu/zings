@@ -6,7 +6,7 @@ import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/10 14:00
  */
 @Data

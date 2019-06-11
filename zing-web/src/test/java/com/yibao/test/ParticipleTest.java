@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/21 19:52
  */
 @RunWith(SpringJUnit4ClassRunner.class)

@@ -7,7 +7,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/13 17:49
  */
 @Data

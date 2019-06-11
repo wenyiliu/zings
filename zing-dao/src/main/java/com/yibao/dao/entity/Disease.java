@@ -8,7 +8,7 @@ import org.neo4j.ogm.annotation.NodeEntity;
 import java.util.List;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/4/30 17:42
  * 字段名要与neo4j中的字段名一一对应
  */

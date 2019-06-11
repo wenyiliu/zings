@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/5 19:57
  * 贝叶斯分类器
  */

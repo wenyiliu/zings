@@ -3,7 +3,7 @@ package com.yibao.biz.service;
 import com.yibao.common.entity.Result;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/14 9:47
  */
 public interface DrugRelationService {

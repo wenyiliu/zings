@@ -18,11 +18,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/6/4 16:17
  */
 @Slf4j
@@ -77,7 +78,8 @@ public class DataCenterMailServiceImpl implements DataCenterMailService {
             data.forEach((key, value) -> {
                 if (key.contains("时间")) {
                     try {
-                        String time = format.format(format.parse(String.valueOf(value)));
+                        Date date = format.parse(String.valueOf(value));
+                        String time = format.format(date);
                         excelDataMap.put(key, time);
                     } catch (ParseException e) {
                         log.error("当key={}，value={}是，时间转换失败，原因是：{}", key, value, e.getCause());

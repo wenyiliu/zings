@@ -9,7 +9,7 @@ import java.util.List;
 
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/5 21:05
  * 获取关键词
  */
@@ -27,14 +27,18 @@ public class Participle {
         List<String> list = Lists.newArrayList();
         List<Term> termList = HanlpUtil.segment.seg(queryString);
         for (Term term : termList) {
-            String word = term.word;//从term中获取分词
-            String pos = term.nature.toString();//从term中获取标签
+            //从term中获取分词
+            String word = term.word;
+            //从term中获取标签
+            String pos = term.nature.toString();
             switch (pos) {
-                case "ill":  //ill 疾病
+                //ill 疾病
+                case "ill":
                     list.add(word);
                     sb.append("ill ");
                     break;
-                case "sym":  //sym症状
+                //sym症状
+                case "sym":
                     list.add(word);
                     sb.append("sym ");
                     break;

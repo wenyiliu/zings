@@ -6,7 +6,7 @@ import lombok.Getter;
 import java.util.List;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/6/4 18:27
  */
 public enum MailToEnum {

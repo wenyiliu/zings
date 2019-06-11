@@ -15,7 +15,7 @@ import javax.mail.internet.MimeMessage;
 import java.io.File;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/28 15:08
  */
 @Slf4j

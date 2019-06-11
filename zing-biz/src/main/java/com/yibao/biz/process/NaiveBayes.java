@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/17 17:43
  */
 @Slf4j

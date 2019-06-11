@@ -4,7 +4,7 @@ import com.hankcs.hanlp.HanLP;
 import com.hankcs.hanlp.seg.Segment;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/21 17:51
  */
 public class HanlpUtil {

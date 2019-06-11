@@ -6,7 +6,7 @@ import lombok.Data;
 import org.neo4j.ogm.annotation.*;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/14 10:37
  */
 @Data

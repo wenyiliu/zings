@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @auther: liuwenyi
+ * @author liuwenyi
  * @date 2019/5/7 16:04
  */
 @Api(tags = "问答接口")
