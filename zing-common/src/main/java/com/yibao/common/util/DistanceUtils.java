@@ -7,29 +7,28 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.math3.stat.descriptive.moment.Mean;
 import org.apache.commons.math3.stat.descriptive.moment.StandardDeviation;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Stream;
 
 /**
  * @author liuwenyi
  * @date 2019/6/6 14:32
  */
 @Slf4j
-public class ADC {
+public class DistanceUtils {
 
     /**
      * Z-score converts two or more sets of data into an ununitary z-score,
      * unifies data standards, improves data comparability,
      * and weakens data interpretation.
-     *
-     * @param
-     * @return
+     * @param labeledPoints
+     * @return List
      */
-    public static List<LabeledPoint> zScore(List<LabeledPoint> labeledPoints) {
+    private static List<LabeledPoint> zScore(List<LabeledPoint> labeledPoints) {
         if (labeledPoints.isEmpty()) {
             log.error("the data normalized list cannot be empty");
-
+            return Collections.emptyList();
         }
         List<LabeledPoint> labeledPointList = Lists.newArrayList();
         Integer max = labeledPoints.stream().map(labeledPoint -> labeledPoint.getData().length)
@@ -55,7 +54,6 @@ public class ADC {
             meanDeviationList.add(dMean);
             meanDeviationList.add(deviation);
             meanDeviationMap.put(i, meanDeviationList);
-
         }
         labeledPoints.forEach(data -> {
             LabeledPoint labeledPoint = new LabeledPoint();
@@ -69,35 +67,60 @@ public class ADC {
             labeledPoint.setData(unification);
             labeledPointList.add(labeledPoint);
         });
+        if (labeledPointList.isEmpty()) {
+            log.error("归一化后数据为空");
+            return Collections.emptyList();
+        }
         return labeledPointList;
     }
 
-    private static double[] normalization(double[] d) {
-        int len = d.length;
-        double[] normalization = new double[len];
-        Mean mean = new Mean();
-        double dMean = mean.evaluate(d);
-        StandardDeviation standardDeviation = new StandardDeviation();
-        double deviation = standardDeviation.evaluate(d);
-        if (deviation == 0) {
-            log.info("标准差为零，取默认值1");
-            deviation = 1;
+    /**
+     * 计算欧式距离
+     *
+     * @param list   历史数据
+     * @param target 目标数据
+     * @param b      true 数据归一化 false 数据不归一
+     * @return
+     */
+    private static Map<Integer, Double> euclideanDistance(List<LabeledPoint> list, LabeledPoint target, Boolean b) {
+        if (list.isEmpty()) {
+            log.error("历史数据为空，跳过计算欧式距离");
+            return Collections.emptyMap();
         }
-        for (int i = 0; i < len; i++) {
-            normalization[i] = (d[i] - dMean) / deviation;
+        List<LabeledPoint> labeledPointList;
+        if (b) {
+            list.add(target);
+            List<LabeledPoint> labeledPointListZScore = zScore(list);
+            for (LabeledPoint labeledPoint : labeledPointListZScore) {
+                if (labeledPoint.getLabel().equals(target.getLabel())) {
+                    target = labeledPoint;
+                }
+            }
+            labeledPointListZScore.remove(target);
+            labeledPointList = labeledPointListZScore;
+        } else {
+            labeledPointList = list;
         }
-        return normalization;
-    }
-
-    public static void euclideanDistance(List<LabeledPoint> list, LabeledPoint target) {
-        list.add(target);
-        List<Map<Integer,Double>> similarityList=Lists.newArrayList();
-        List<LabeledPoint> labeledPointList = zScore(list);
-        Stream<LabeledPoint> labeledPointStream = labeledPointList.stream()
-                .filter(labeledPoint -> labeledPoint.getLabel().equals(target.getLabel()));
+        double[] targetData = target.getData();
+        Map<Integer, Double> similarityMap = Maps.newHashMap();
         labeledPointList.forEach(labeledPoint -> {
-            labeledPoint.getData();
+            double[] labeledPointData = labeledPoint.getData();
+            Integer label = labeledPoint.getLabel();
+            Double similarity;
+            if (targetData.length != labeledPointData.length) {
+                log.error("目标数据长度为{}，标签为{}的数据长度为{}，长度不同，相似度取0", targetData.length,
+                        label, labeledPointData.length);
+                similarity = 0.0;
+            } else {
+                Double d = 0.0;
+                for (int i = 0; i < labeledPointData.length; i++) {
+                    d += Math.pow(targetData[i] - labeledPointData[i], 2);
+                }
+                similarity = 1 / (1 + Math.sqrt(d));
+            }
+            similarityMap.put(label, similarity);
         });
+        return similarityMap;
     }
 
     public static void main(String[] args) {
@@ -112,9 +135,25 @@ public class ADC {
         double[] d1 = new double[]{1, 3, 3, 4, 5};
         labeledPoint1.setData(d1);
         labeledPointList.add(labeledPoint1);
-        System.out.println(labeledPointList.size());
-        zScore(labeledPointList).forEach(data -> {
-            System.out.println(data.toString());
-        });
+
+        LabeledPoint labeledPoint2 = new LabeledPoint();
+        labeledPoint2.setLabel(3);
+        double[] d2 = new double[]{2, 3, 1, 4, 2};
+        labeledPoint2.setData(d2);
+        labeledPointList.add(labeledPoint2);
+
+        LabeledPoint labeledPoint3 = new LabeledPoint();
+        labeledPoint3.setLabel(4);
+        double[] d3 = new double[]{4, 2, 3, 1, 4};
+        labeledPoint3.setData(d3);
+        labeledPointList.add(labeledPoint3);
+
+        LabeledPoint labeledPoint4 = new LabeledPoint();
+        labeledPoint4.setLabel(-1);
+        double[] d4 = new double[]{-1, 2, 6, 1, 4};
+        labeledPoint4.setData(d4);
+
+        Map<Integer, Double> map = euclideanDistance(labeledPointList, labeledPoint4, true);
+        map.forEach((key, value) -> System.out.println(key + "=====" + value));
     }
 }

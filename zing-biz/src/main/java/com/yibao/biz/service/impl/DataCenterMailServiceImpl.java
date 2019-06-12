@@ -12,6 +12,7 @@ import com.yibao.dao.entity.DataCenterSqlDO;
 import com.yibao.dao.mapper.business.DataCenterSqlMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.text.ParseException;
@@ -30,21 +31,24 @@ import java.util.Map;
 @Service
 public class DataCenterMailServiceImpl implements DataCenterMailService {
 
-    private static final String PATH = "..\\data\\excel\\";
-
-    private static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    private static List<String> formattingList = Lists.newArrayList("患者在本次服务中提出的疑问", "本次服务中你发现了哪些认为需要干预的问题，以及你计划如何干预",
-            "本次服务中是否遇到了你不知道该如何给建议的问题", "本次服务中你是否发现了自己缺失的知识点以及你需要这个知识点的原因");
     @Autowired
     private DataCenterSqlMapper sqlMapper;
 
     @Autowired
     private MailService mailService;
 
+    private static final String PATH = "..\\data\\excel\\";
+    private static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    private static List<String> formattingList = Lists.newArrayList("患者在本次服务中提出的疑问",
+            "本次服务中你发现了哪些认为需要干预的问题，以及你计划如何干预",
+            "本次服务中是否遇到了你不知道该如何给建议的问题",
+            "本次服务中你是否发现了自己缺失的知识点以及你需要这个知识点的原因");
+    @Value("${spring.mail.recipient}")
+    private static String[] recipient;
     @Override
     public Boolean sendMailToGroupOne() {
         MailBO mail = new MailBO();
-        mail.setRecipient(MailToEnum.GROUPONE.getTo());
+        mail.setRecipient(recipient);
         mail.setSubject(LocalDate.now().plusDays(-1) + "线上数据");
         mail.setContent(LocalDate.now().plusDays(-1) + "线上数据均在以下附件中，请注意查收。如有问题，请及时联系我！");
         List<String> filePath = Lists.newArrayList();
@@ -64,7 +68,6 @@ public class DataCenterMailServiceImpl implements DataCenterMailService {
                         log.error("{},生成Excel文件失败", dataCenterSql.getFunctionName());
                     }
                 }
-
             }
         });
         mail.setPathList(filePath);
@@ -73,7 +76,7 @@ public class DataCenterMailServiceImpl implements DataCenterMailService {
 
     private static List<Map<String, String>> formatting(List<Map<String, Object>> list) {
         List<Map<String, String>> excelDataList = Lists.newArrayList();
-        list.forEach(data -> {
+        list.forEach((Map<String, Object> data) -> {
             Map<String, String> excelDataMap = Maps.newHashMap();
             data.forEach((key, value) -> {
                 if (key.contains("时间")) {
@@ -92,9 +95,9 @@ public class DataCenterMailServiceImpl implements DataCenterMailService {
                             excelDataMap.put(qa[0], qa[1]);
                         }
                     }
-                } else if (key.equals("患者出生日期")){
-                 LocalDate.parse((CharSequence) value, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-                }else {
+                } else if (key.equals("患者出生日期")) {
+                    LocalDate.parse((CharSequence) value, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+                } else {
                     excelDataMap.put(key, String.valueOf(value));
                 }
             });
@@ -107,15 +110,4 @@ public class DataCenterMailServiceImpl implements DataCenterMailService {
         return sql.replace("#{strDate}", " '" + strDate + "' ")
                 .replace("#{endDate}", " '" + endDate + "' ");
     }
-
-    public static void main(String[] args) {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        try {
-            String time = format.format(format.parse("2019-05-28 00:31:05.0"));
-            System.out.println(time);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-    }
-
 }
