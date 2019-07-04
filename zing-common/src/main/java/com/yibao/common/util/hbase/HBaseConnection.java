@@ -173,10 +173,12 @@ public class HBaseConnection {
             if (admin.tableExists(name)) {
                 admin.disableTable(name);
                 admin.deleteTable(name);
+                return true;
             } else {
                 log.error("表不存在");
+                return false;
             }
-            return true;
+
         } catch (IOException e) {
             log.error("删除表：{}失败，原因：{}", tableName, e);
             return false;
@@ -232,7 +234,7 @@ public class HBaseConnection {
 
     }
 
-//    private static ResultScanner filter(String tableName, String cf, String column, String value, CompareFilter.CompareOp compareOp, ByteArrayComparable comparable){
+    //    private static ResultScanner filter(String tableName, String cf, String column, String value, CompareFilter.CompareOp compareOp, ByteArrayComparable comparable){
 //        ResultScanner results=
 //    }
     private static void scanner(ResultScanner scanner) {
