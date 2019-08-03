@@ -19,16 +19,17 @@ public interface SymptomRelationRepository extends Neo4jRepository<Symptom, Long
     /**
      * 根据症状名称获取相关疾病
      *
-     * @param symName
-     * @return
+     * @param symName 症状名称
+     * @return List<SymptomRelation>
      */
     @Query("match p=(d:Disease)-[:症状]->(s:Symptom) where s.name={symName} return p")
     List<SymptomRelation> getDiseaseBySymptomName(@Param("symName") String symName);
 
     /**
      * 根据疾病名称获取相关症状
-     * @param disName
-     * @return
+     *
+     * @param disName 疾病名称
+     * @return List<SymptomRelation>
      */
     @Query("match p=(d:Disease)-[:症状]->(s:Symptom) where d.name={disName} return p")
     List<SymptomRelation> getSymptomByDisName(@Param("disName") String disName);

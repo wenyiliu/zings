@@ -18,8 +18,8 @@ public interface DepartmentRelationRepository extends Neo4jRepository<Department
     /**
      * 根据疾病名称获取相关科室
      *
-     * @param disName
-     * @return
+     * @param disName 疾病名称
+     * @return List<DepartmentRelation>
      */
     @Query("match p=(n:Disease)-[:所属科室]->(m:Department) where n.name={disName} return p")
     List<DepartmentRelation> getDepartmentRelationByDisName(@Param("disName") String disName);

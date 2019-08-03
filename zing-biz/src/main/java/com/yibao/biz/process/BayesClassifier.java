@@ -29,7 +29,7 @@ public class BayesClassifier {
 
     private static NaiveBayesModel model;
 
-    private static final String FILEPATH = ".\\data\\question\\";
+    private static final String FILEPATH = "." + File.separator + "data" + File.separator + "question" + File.separator;
 
     static {
         try {
@@ -49,9 +49,9 @@ public class BayesClassifier {
     /**
      * 加载文件
      *
-     * @param filePath
-     * @return
-     * @throws IOException
+     * @param filePath 文件路径
+     * @return List<String>
+     * @throws Exception
      */
     private static List<String> loadFile(String filePath) {
         File file = new File(filePath);
@@ -73,8 +73,8 @@ public class BayesClassifier {
     /**
      * 量化分词
      *
-     * @param sentence
-     * @return
+     * @param sentence 句子
+     * @return double[]
      */
     private static double[] sentencesToArrays(String sentence) {
         //创建一个vector数组，默认值为0.0
@@ -96,13 +96,13 @@ public class BayesClassifier {
      * label（Double）分类标签
      * double[]张量
      *
-     * @return
+     * @return List<LabeledPoint>
      * @throws IOException
      */
     private static List<LabeledPoint> getTrainDataList() {
         List<LabeledPoint> list = Lists.newArrayList();
         for (QuestionsEnum question : QuestionsEnum.values()) {
-            List<String> lineList = loadFile(FILEPATH+question.getFilePath());
+            List<String> lineList = loadFile(FILEPATH + question.getFilePath());
             lineList.forEach(line -> {
                 double[] arr = sentencesToArrays(line);
                 LabeledPoint trainData = new LabeledPoint(question.getIndex(), arr);
@@ -115,7 +115,7 @@ public class BayesClassifier {
     /**
      * 预测
      *
-     * @return
+     * @return double
      */
     public static double classifier(String sentence) {
         double[] arr = sentencesToArrays(sentence);
@@ -125,13 +125,13 @@ public class BayesClassifier {
     /**
      * 从抽象的问题模板中提取关键词
      *
-     * @return
+     * @return Map<String ,   Integer>
      */
     private static Map<String, Integer> extractKeyWord() {
         Map<String, Integer> vocabulary = Maps.newHashMap();
         List<String> list = Lists.newLinkedList();
         for (QuestionsEnum q : QuestionsEnum.values()) {
-            List<String> lineList = loadFile(FILEPATH+q.getFilePath());
+            List<String> lineList = loadFile(FILEPATH + q.getFilePath());
             lineList.forEach(line -> {
                 List<Term> termList = HanlpUtil.segment.seg(line);
                 termList.forEach(term -> list.add(term.word));

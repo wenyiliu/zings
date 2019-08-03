@@ -4,6 +4,7 @@ import com.yibao.biz.service.DepartmentService;
 import com.yibao.dao.entity.node.Department;
 import com.yibao.dao.repository.node.DepartmentRepository;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,14 +29,14 @@ public class DepartmentServiceImpl implements DepartmentService {
 
     @Override
     public Boolean insertDepartment(Department department) {
-        String name=department.getName();
-        if (name==null||name.equals("")){
-            log.error("名字不存在",department.toString());
+        String name = department.getName();
+        if (StringUtils.isBlank(name)) {
+            log.error("名字不存在", department.toString());
             return false;
         }
         List<Department> departmentList = departmentRepository.getDepartmentByName(department.getName());
-        if (!departmentList.isEmpty()){
-            log.info("已经存在跳过创建",name);
+        if (!departmentList.isEmpty()) {
+            log.info("已经存在跳过创建", name);
             return true;
         }
         departmentRepository.save(department);

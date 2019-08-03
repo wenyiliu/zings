@@ -18,8 +18,8 @@ public interface CheckRelationRepository extends Neo4jRepository<CheckRelation, 
     /**
      * 根据疾病名称获取相关检查
      *
-     * @param disName
-     * @return
+     * @param disName 疾病名称
+     * @return List<CheckRelation>
      */
     @Query("match p=(d:Disease)-[:诊断检查]->(c:Check) where d.name={disName} return p")
     List<CheckRelation> getCheckRelationByDisName(@Param("disName") String disName);

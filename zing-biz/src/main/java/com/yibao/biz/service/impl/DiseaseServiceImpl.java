@@ -55,13 +55,13 @@ public class DiseaseServiceImpl implements DiseaseService {
 
     @Override
     public Result getDisCureWayByName(String name) {
-        DiseaseCureWayBO diseaseCureWay = new DiseaseCureWayBO();
-        diseaseCureWay.setDisName(name);
         List<Disease> diseaseList = getDiseaseByName(name);
         if (diseaseList.isEmpty()) {
             log.error("查询{}治疗方式失败", name);
             return Result.wrapErrorResult(ZingErrors.DISEASE_CUREWAY_IS_NOT_EXIST);
         }
+        DiseaseCureWayBO diseaseCureWay = new DiseaseCureWayBO();
+        diseaseCureWay.setDisName(name);
         diseaseList.stream().distinct().collect(Collectors.toList())
                 .forEach(disease -> diseaseCureWay.setCureWayList(disease.getCure_way()));
         return Result.wrapSuccessfulResult(diseaseCureWay);
@@ -69,13 +69,13 @@ public class DiseaseServiceImpl implements DiseaseService {
 
     @Override
     public Result getDisDescByName(String name) {
-        DiseaseDescBO diseaseDesc = new DiseaseDescBO();
-        diseaseDesc.setDisName(name);
         List<String> diseaseDescList = getDiseaseProperties(name, 2);
         if (diseaseDescList.isEmpty()) {
             log.error("查询{}描述接口失败", name);
             return Result.wrapErrorResult(ZingErrors.DISEASE_DESC_IS_NOT_EXIST);
         }
+        DiseaseDescBO diseaseDesc = new DiseaseDescBO();
+        diseaseDesc.setDisName(name);
         diseaseDescList.stream().distinct().collect(Collectors.toList())
                 .forEach(diseaseDesc::setDesc);
         return Result.wrapSuccessfulResult(diseaseDesc);

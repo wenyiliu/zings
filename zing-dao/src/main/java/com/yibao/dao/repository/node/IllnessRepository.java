@@ -11,12 +11,13 @@ import org.springframework.stereotype.Repository;
  * @date 2019/5/29 11:11
  */
 @Repository
-public interface IllnessRepository extends Neo4jRepository<Illness,Long>{
+public interface IllnessRepository extends Neo4jRepository<Illness, Long> {
 
     /**
      * 获取疾病
-     * @param name
-     * @return
+     *
+     * @param name 疾病名称
+     * @return Illness
      */
     @Query("match(n:Illness) where n.name={name} or n.aliaso={name} or n.aliast={name} return n")
     Illness findIllnessByName(@Param("name") String name);

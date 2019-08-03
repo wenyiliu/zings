@@ -7,7 +7,9 @@ import lombok.Getter;
  * @date 2019/5/5 14:13
  */
 public enum ZingErrors implements ServiceErrors {
-
+    /**
+     * 异常
+     */
     DISEASE_IS_NOT_EXIST(30000, "疾病不存在或输入错误"),
     DISEASE_IS_NOT_EXIST_OR_SYMNAMT_ERROR(30001, "与症状相关疾病不存在或症状输入错误"),
     DISEASE_AND_DRUG_NOT_EXIST_OR_SYMNAMT_ERROR(30002, "与症状相关疾病和药品不存在或症状输入错误"),

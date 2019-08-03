@@ -10,6 +10,4 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface HospitalDepartmentRelationRepository extends Neo4jRepository<HospitalDepartmentRelation,Long>{
-
-
 }

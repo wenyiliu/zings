@@ -17,8 +17,9 @@ public interface HospitalRepository extends Neo4jRepository<Hospital, Long> {
 
     /**
      * 根据名字获取医院
-     * @param name
-     * @return
+     *
+     * @param name 医院名称
+     * @return List<Hospital>
      */
     @Query("match(n:Hospital) where n.name={name} or n.alias={name} return n")
     List<Hospital> getDistinctByNameOrAlias(@Param("name") String name);

@@ -18,8 +18,8 @@ public interface DrugRelationRepository extends Neo4jRepository<DrugRelation, Lo
     /**
      * 根据疾病名称获取相关常用药物
      *
-     * @param name
-     * @return
+     * @param name 疾病名称
+     * @return List<DrugRelation>
      */
     @Query("MATCH p=(n:Disease)-[:常用药品]->(m:Drug) WHERE n.name={name} RETURN p")
     List<DrugRelation> commonDrugList(@Param("name") String name);

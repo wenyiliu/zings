@@ -11,8 +11,8 @@ public interface QuestionService {
     /**
      * 问答接口
      *
-     * @param question
-     * @return
+     * @param question 问题
+     * @return Result
      */
     Result answer(String question);
 
