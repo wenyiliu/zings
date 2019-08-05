@@ -1,12 +1,16 @@
-2019-05-24 14:31:47,909 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on LAPTOP-MFJJQEG3 with PID 7508 (D:\projectdata\JavaProjectData\demo\zing\zing-web\target\classes started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing)
-2019-05-24 14:31:47,941 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2019-05-24 14:31:53,111 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 6.377 seconds (JVM running for 8.593)
-2019-05-24 16:36:32,560 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on LAPTOP-MFJJQEG3 with PID 3864 (D:\projectdata\JavaProjectData\demo\zing\zing-web\target\classes started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing)
-2019-05-24 16:36:32,574 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2019-05-24 16:36:37,550 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 5.803 seconds (JVM running for 7.209)
-2019-05-24 16:37:13,115 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on LAPTOP-MFJJQEG3 with PID 16068 (D:\projectdata\JavaProjectData\demo\zing\zing-web\target\classes started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing)
-2019-05-24 16:37:13,121 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2019-05-24 16:37:18,140 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 5.831 seconds (JVM running for 7.252)
-2019-05-27 10:12:10,403 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on LAPTOP-MFJJQEG3 with PID 14236 (D:\projectdata\JavaProjectData\demo\zing\zing-web\target\classes started by 刘文义 in D:\projectdata\JavaProjectData\demo\zing)
-2019-05-27 10:12:10,409 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
-2019-05-27 10:12:15,408 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 5.853 seconds (JVM running for 7.238)
+2019-08-05 11:35:26,686 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on liuwenyideMacBook-Pro.local with PID 1592 (/Users/liuwenyi/IdeaProjects/zings/zing-web/target/classes started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings)
+2019-08-05 11:35:26,689 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 11:35:28,728 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 2.379 seconds (JVM running for 3.096)
+2019-08-05 11:45:11,097 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on liuwenyideMacBook-Pro.local with PID 1628 (/Users/liuwenyi/IdeaProjects/zings/zing-web/target/classes started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings)
+2019-08-05 11:45:11,100 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 11:45:12,867 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 2.076 seconds (JVM running for 2.748)
+2019-08-05 11:47:00,342 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on liuwenyideMacBook-Pro.local with PID 1635 (/Users/liuwenyi/IdeaProjects/zings/zing-web/target/classes started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings)
+2019-08-05 11:47:00,345 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 11:47:02,103 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 2.043 seconds (JVM running for 2.437)
+2019-08-05 11:50:24,639 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on liuwenyideMacBook-Pro.local with PID 1644 (/Users/liuwenyi/IdeaProjects/zings/zing-web/target/classes started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings)
+2019-08-05 11:50:24,643 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 11:50:26,662 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 2.366 seconds (JVM running for 3.194)
+2019-08-05 13:02:48,072 INFO (StartupInfoLogger.java:50)- Starting ZingApplication on liuwenyideMacBook-Pro.local with PID 1934 (/Users/liuwenyi/IdeaProjects/zings/zing-web/target/classes started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings)
+2019-08-05 13:02:48,073 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 13:02:49,913 INFO (StartupInfoLogger.java:59)- Started ZingApplication in 2.142 seconds (JVM running for 2.828)
+2019-08-05 13:03:00,158 ERROR (DrugRelationServiceImpl.java:64)- 获取肺泡蛋白质沉积症相关的药物接口失败

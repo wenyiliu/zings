@@ -1,0 +1,35 @@
+2019-08-05 10:21:48,808 INFO (StartupInfoLogger.java:50)- Starting IllnessRepositoryTest on liuwenyideMacBook-Pro.local with PID 1197 (started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings/zing-web)
+2019-08-05 10:21:48,810 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 10:21:51,255 INFO (StartupInfoLogger.java:59)- Started IllnessRepositoryTest in 22.678 seconds (JVM running for 23.292)
+2019-08-05 10:24:48,530 INFO (StartupInfoLogger.java:50)- Starting IllnessRepositoryTest on liuwenyideMacBook-Pro.local with PID 1203 (started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings/zing-web)
+2019-08-05 10:24:48,531 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 10:24:51,155 INFO (StartupInfoLogger.java:59)- Started IllnessRepositoryTest in 22.842 seconds (JVM running for 23.464)
+2019-08-05 10:27:07,494 INFO (StartupInfoLogger.java:50)- Starting DiseaseTest on liuwenyideMacBook-Pro.local with PID 1206 (started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings/zing-web)
+2019-08-05 10:27:07,495 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 10:27:10,000 INFO (StartupInfoLogger.java:59)- Started DiseaseTest in 22.736 seconds (JVM running for 23.358)
+2019-08-05 12:07:32,517 INFO (StartupInfoLogger.java:50)- Starting HanlpTest on liuwenyideMacBook-Pro.local with PID 1681 (started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings/zing-web)
+2019-08-05 12:07:32,519 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 12:07:35,269 INFO (StartupInfoLogger.java:59)- Started HanlpTest in 3.251 seconds (JVM running for 3.876)
+2019-08-05 12:07:35,639 INFO (HanlpTest.java:26)- [肺泡/n, 蛋白质/n, 沉积/v, 症/ng, 是/vshi, 什么/ry]
+2019-08-05 12:10:42,391 INFO (StartupInfoLogger.java:50)- Starting HanlpTest on liuwenyideMacBook-Pro.local with PID 1686 (started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings/zing-web)
+2019-08-05 12:10:42,393 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 12:10:44,934 INFO (StartupInfoLogger.java:59)- Started HanlpTest in 3.096 seconds (JVM running for 3.711)
+2019-08-05 12:10:45,229 INFO (HanlpTest.java:26)- [肺泡/n, 蛋白质/n, 沉积/v, 症/ng, 是/vshi, 什么/ry]
+2019-08-05 12:22:02,502 INFO (StartupInfoLogger.java:50)- Starting HanlpTest on liuwenyideMacBook-Pro.local with PID 1873 (started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings/zing-web)
+2019-08-05 12:22:02,504 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 12:22:05,355 INFO (StartupInfoLogger.java:59)- Started HanlpTest in 3.437 seconds (JVM running for 4.126)
+2019-08-05 12:22:28,154 INFO (StartupInfoLogger.java:50)- Starting HanlpTest on liuwenyideMacBook-Pro.local with PID 1877 (started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings/zing-web)
+2019-08-05 12:22:28,155 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 12:22:30,830 INFO (StartupInfoLogger.java:59)- Started HanlpTest in 2.953 seconds (JVM running for 3.564)
+2019-08-05 12:23:55,865 INFO (StartupInfoLogger.java:50)- Starting HanlpTest on liuwenyideMacBook-Pro.local with PID 1884 (started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings/zing-web)
+2019-08-05 12:23:55,866 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 12:23:58,477 INFO (StartupInfoLogger.java:59)- Started HanlpTest in 2.882 seconds (JVM running for 3.491)
+2019-08-05 12:23:58,816 INFO (HanlpTest.java:26)- [肺泡/n, 蛋白质/n, 沉积/v, 症/ng, 是/vshi, 什么/ry]
+2019-08-05 12:57:23,658 INFO (StartupInfoLogger.java:50)- Starting HanlpTest on liuwenyideMacBook-Pro.local with PID 1908 (started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings/zing-web)
+2019-08-05 12:57:23,660 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 12:57:26,294 INFO (StartupInfoLogger.java:59)- Started HanlpTest in 3.216 seconds (JVM running for 3.849)
+2019-08-05 12:57:28,232 INFO (HanlpTest.java:26)- [肺泡蛋白质沉积症/ill, 是/vshi, 什么/ry]
+2019-08-05 12:58:26,512 INFO (StartupInfoLogger.java:50)- Starting HanlpTest on liuwenyideMacBook-Pro.local with PID 1924 (started by liuwenyi in /Users/liuwenyi/IdeaProjects/zings/zing-web)
+2019-08-05 12:58:26,514 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-08-05 12:58:29,257 INFO (StartupInfoLogger.java:59)- Started HanlpTest in 3.028 seconds (JVM running for 3.66)
+2019-08-05 12:58:31,121 INFO (HanlpTest.java:26)- [肺泡蛋白质沉积症/ill, 是/vshi, 什么/ry]
